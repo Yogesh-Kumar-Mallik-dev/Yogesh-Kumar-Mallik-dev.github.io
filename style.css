@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0a0f1f, #16213e, #1a1a2e);
+  background-size: 300% 300%;
+  animation: gradientShift 10s ease infinite;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 2.5rem;
+  text-align: center;
+  width: 90%;
+  max-width: 420px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 35px rgba(255, 255, 255, 0.2);
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  background: url('images/yogeshkumaemallik.png') center/cover no-repeat;
+}
+
+h1 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #cfcfcf;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 0.95rem;
+  color: #ddd;
+  margin: 0.7rem 0 1.3rem;
+}
+
+.motto {
+  font-style: italic;
+  color: #9ad3ff;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.link-btn {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.link-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+}
