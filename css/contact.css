@@ -1,0 +1,176 @@
+.contact-page {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  padding: 6rem 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #e0e0e0;
+}
+
+/* Profile Section */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.profile-card {
+  background: rgba(15, 15, 25, 0.9);
+  border: 1px solid #1f1f2e;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0, 246, 255, 0.1);
+  max-width: 350px;
+}
+
+.profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 2px solid #00f6ff;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.profile-card h2 {
+  color: #00f6ff;
+  margin-bottom: 0.4rem;
+}
+
+.profile-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* Get in Touch Card */
+.get-in-touch-card {
+  background: rgba(15, 15, 25, 0.9);
+  border: 1px solid #1f1f2e;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 246, 255, 0.1);
+  max-width: 450px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.get-in-touch-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 246, 255, 0.2);
+}
+
+.get-in-touch-card h3 {
+  color: #00f6ff;
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.2rem;
+}
+
+.social-icon img {
+  width: 45px;
+  height: 45px;
+  filter: drop-shadow(0 0 5px rgba(0, 246, 255, 0.2));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icon img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px #00f6ff);
+}
+
+/* Education Section */
+.education-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.education-section h2 {
+  color: #00f6ff;
+  margin-bottom: 2rem;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.education-section {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.education-section h2 {
+  color: #00f6ff;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.edu-card {
+  background: rgba(15, 15, 25, 0.9);
+  border: 1px solid #1f1f2e;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 246, 255, 0.1);
+  transition: all 0.3s ease;
+  max-width: 400px;
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 246, 255, 0.25);
+}
+
+/* Image container for large banners */
+.edu-img-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.edu-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.9);
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.edu-card:hover .edu-img-container img {
+  transform: scale(1.05);
+  filter: brightness(1);
+}
+
+/* Info section under image */
+.edu-info {
+  padding: 1.5rem;
+}
+
+.edu-info h3 {
+  color: #00f6ff;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.edu-info p {
+  color: #ccc;
+  font-size: 0.9rem;
+}
