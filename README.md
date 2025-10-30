@@ -25,7 +25,7 @@ Currently, I’m:
 
 ### ⚡ Current Focus
 - Frontend projects for **QiForge**  
-- Full-stack web development (Node.js, Express, MongoDB)  
+- Full-stack web development (Node.js, Express, MongoDB)  {learning}
 - Game development using **Godot Engine**  
 
 ---
