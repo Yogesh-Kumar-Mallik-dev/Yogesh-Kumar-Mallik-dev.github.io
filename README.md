@@ -35,4 +35,4 @@ To create meaningful digital experiences that **inspire, teach, and empower** ot
 
 ---
 
-© 2025 **Yogesh Kumar Mallik** • [QiForge.site](https://qiforge.org)
+© 2025 **Yogesh Kumar Mallik** • [QiForge.org](https://qiforge.org)
