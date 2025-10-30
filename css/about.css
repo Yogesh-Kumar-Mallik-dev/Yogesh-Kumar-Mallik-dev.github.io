@@ -1,0 +1,145 @@
+/* ===================== ABOUT PAGE ===================== */
+.about-page {
+  padding-top: 8rem;
+  color: #e0e0e0;
+  z-index: 2;
+  position: relative;
+}
+
+.about-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  text-align: left;
+  padding: 4rem 2rem;
+}
+
+.about-photo-large {
+  width: 280px;
+  height: 320px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #1f1f2e;
+  box-shadow: 0 0 25px rgba(0, 246, 255, 0.2);
+}
+
+.about-photo-large img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-hero-text {
+  max-width: 600px;
+}
+
+.about-hero-text h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #00f6ff;
+  font-size: 2rem;
+}
+
+.about-hero-text h2 span {
+  color: #7d00ff;
+}
+
+.about-hero-text p {
+  margin-top: 1rem;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+/* === Details Grid === */
+.about-details {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.detail-card {
+  background: rgba(15, 15, 25, 0.9);
+  border: 1px solid #1f1f2e;
+  border-radius: 12px;
+  padding: 2rem;
+  transition: 0.3s;
+}
+
+.detail-card:hover {
+  border-color: #00f6ff;
+  box-shadow: 0 0 20px rgba(0, 246, 255, 0.2);
+}
+
+.detail-card h3 {
+  color: #00f6ff;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.detail-card p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* === Timeline === */
+.about-timeline {
+  padding: 4rem 2rem 6rem;
+  text-align: center;
+}
+
+.timeline {
+  position: relative;
+  max-width: 700px;
+  margin: 2rem auto;
+  border-left: 2px solid #00f6ff55;
+  padding-left: 2rem;
+}
+
+.timeline-item {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #00f6ff;
+  box-shadow: 0 0 10px #00f6ff;
+}
+
+.timeline-item .year {
+  display: block;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1rem;
+  color: #7d00ff;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-item p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* === Back Button / Navbar Fix for Mobile === */
+@media (max-width: 768px) {
+  .about-hero {
+    text-align: center;
+  }
+
+  .about-photo-large {
+    width: 220px;
+    height: 260px;
+  }
+}
