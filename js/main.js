@@ -1,5 +1,5 @@
 // ======================== Typing Effect ========================
-const typingText = ["Full-Stack Developer", "Game Developer", "Founder of QiForge"];
+const typingText = ["Front-End Developer", "Game Developer", "Founder of QiForge"];
 let index = 0, charIndex = 0;
 const typingEl = document.getElementById("typing");
 
