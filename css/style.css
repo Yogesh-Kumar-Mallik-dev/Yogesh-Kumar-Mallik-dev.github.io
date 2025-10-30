@@ -282,20 +282,20 @@ h2 {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
   justify-items: center;
   margin-top: 3rem;
 }
 
-/* Skill Card */
 .skill-card {
   background: rgba(15, 15, 25, 0.9);
   border: 1px solid #1f1f2e;
   border-radius: 10px;
-  padding: 1.5rem;
-  width: 150px;
-  height: 150px;
+  padding: 2rem 1rem;
+  width: 100%;
+  max-width: 180px;
+  min-height: 160px;
   transition: all 0.3s ease;
   box-shadow: 0 0 8px rgba(0, 246, 255, 0.08);
   display: flex;
@@ -371,11 +371,31 @@ h2 {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
+  justify-items: center;
+  align-items: stretch;
   margin-top: 3rem;
-  perspective: 1000px;
+  padding: 0 1rem;
 }
+
+.project-card {
+  width: 100%;
+  max-width: 360px;
+  background: linear-gradient(145deg, rgba(15, 15, 25, 0.9), rgba(25, 25, 35, 0.9));
+  border: 1px solid #1f1f2e;
+  border-radius: 16px;
+  padding: 1.8rem;
+  box-shadow: 0 0 10px rgba(0, 246, 255, 0.05);
+  transition: all 0.4s ease;
+  transform-style: preserve-3d;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 
 .project-card {
   background: linear-gradient(145deg, rgba(15, 15, 25, 0.9), rgba(25, 25, 35, 0.9));

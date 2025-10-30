@@ -143,3 +143,65 @@
     height: 260px;
   }
 }
+
+/* ===================== ABOUT QIFORGE SECTION ===================== */
+.about-qiforge {
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.qiforge-container {
+  max-width: 850px;
+  margin: 2rem auto;
+  background: rgba(15, 15, 25, 0.9);
+  border: 1px solid #1f1f2e;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 0 25px rgba(0, 246, 255, 0.1);
+  transition: 0.4s ease;
+}
+
+.qiforge-container:hover {
+  box-shadow: 0 0 35px rgba(0, 246, 255, 0.25);
+  border-color: #00f6ff;
+}
+
+.qiforge-text p {
+  color: #ccc;
+  line-height: 1.8;
+  margin-top: 1rem;
+  font-size: 1.05rem;
+  text-align: justify;
+}
+
+.qiforge-text strong {
+  color: #00f6ff;
+}
+
+.qiforge-btn {
+  margin-top: 2rem;
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid #00f6ff;
+  color: #00f6ff;
+  padding: 0.8rem 1.6rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.qiforge-btn:hover {
+  background: #00f6ff;
+  color: #000;
+  box-shadow: 0 0 20px #00f6ff;
+}
+
+@media (max-width: 768px) {
+  .qiforge-container {
+    padding: 2rem 1.5rem;
+  }
+  .qiforge-text p {
+    text-align: center;
+  }
+}

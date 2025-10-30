@@ -1,0 +1,39 @@
+/* ===================== PROJECTS PAGE ===================== */
+.projects-page {
+  position: relative;
+  z-index: 2;
+  padding-top: 8rem;
+}
+
+.projects-hero {
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+}
+
+.projects-hero h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #00f6ff;
+  font-size: 2rem;
+}
+
+.projects-hero p {
+  color: #ccc;
+  font-size: 1.05rem;
+  max-width: 700px;
+  margin: 1rem auto 0;
+  line-height: 1.7;
+}
+
+.projects-showcase {
+  padding: 4rem 2rem 6rem;
+}
+
+.project-footer {
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.project-footer .btn {
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+}
