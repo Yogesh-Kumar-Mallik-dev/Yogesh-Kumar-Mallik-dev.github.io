@@ -6,7 +6,9 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
+::-webkit-scrollbar {
+    display: none;
+}
 body {
   background-color: #050509;
   color: #e0e0e0;
