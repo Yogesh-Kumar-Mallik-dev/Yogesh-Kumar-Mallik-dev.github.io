@@ -78,7 +78,7 @@
 
 <body>
   <header class="navbar">
-    <img class="logo glow" src="../images/logo.png" height="30px" />
+    <img class="logo glow" src="../images/logo.png" height="30px" alt="QiForge Logo" />
     <nav class="nav-menu">
       <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
@@ -94,77 +94,158 @@
 
   <canvas id="bgCanvas"></canvas>
 
-  <main class="contact-page fade-up">
-    <section class="contact-section">
+  <main class="contact-main fade-up">
 
-      <!-- Profile Image -->
-      <div class="profile-card">
-        <img src="../images/yogeshkumaemallik.png" alt="Yogesh Kumar Mallik" class="profile-img">
-        <h2>Yogesh Kumar Mallik</h2>
-        <p>Full-Stack Developer | Game Developer | Founder of QiForge</p>
+    <!-- Unified Profile & Links -->
+    <section class="profile-section">
+      <div class="profile-unified">
+        <img src="../images/yogeshkumaemallik.png" alt="Yogesh Kumar Mallik" class="profile-img" />
+
+        <div class="profile-content">
+          <h2>Yogesh Kumar Mallik</h2>
+          <p>Full-Stack Developer | Game Developer | Founder of QiForge</p>
+
+          <div class="social-links">
+            <!-- GitHub -->
+            <a href="https://github.com/Yogesh-Kumar-Mallik-dev" target="_blank" rel="noopener noreferrer" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 .5C5.7.5.8 5.4.8 11.7c0 4.9 3.1 9 7.4 10.5.5.1.7-.2.7-.5v-1.7c-3 .7-3.6-1.3-3.6-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 3 .8.1-.7.4-1.1.8-1.3-2.4-.3-5-1.2-5-5.5 0-1.2.4-2.1 1-2.8-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.8 1 .8-.2 1.6-.3 2.4-.3.8 0 1.6.1 2.4.3 2-.1 2.8-1 2.8-1 0 .1.3 1.1.1 2.5.6.8 1 1.7 1 2.8 0 4.3-2.6 5.2-5.1 5.5.4.3.8 1 .8 2v3c0 .3.2.6.7.5 4.3-1.4 7.4-5.6 7.4-10.5C23.3 5.4 18.4.5 12 .5z"/>
+              </svg>
+              <span>@Yogesh-Kumar-Mallik-dev</span>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/yogesh-kumar-mallik-060895390" target="_blank" rel="noopener noreferrer" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-.9 1.8-2.2 3.7-2.2 4 0 4.7 2.6 4.7 6v9.9h-4V15.5c0-2.1 0-4.8-2.9-4.8-2.9 0-3.3 2.3-3.3 4.7V24h-4V8z"/>
+              </svg>
+              <span>@yogesh-kumar-mallik</span>
+            </a>
+
+            <!-- freeCodeCamp -->
+            <a href="https://www.freecodecamp.org/yogesh-kumar-mallik-dev" target="_blank" rel="noopener noreferrer" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="26" height="26" viewBox="0,0,256,256" fill="currentColor">
+                <g fill-opacity="1" fill="currentColor" fill-rule="nonzero" stroke="none" stroke-width="1"
+                  stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(5.33333,5.33333)">
+                    <path d="M40.001,39.928c-0.286,0 -0.57,-0.122 -0.768,-0.358c-0.354,-0.423 -0.299,-1.054 0.125,-1.409c4.16,-3.48 6.642,-8.785 6.642,-14.19c0,-5.108 -2.234,-9.568 -6.642,-13.255c-0.424,-0.354 -0.479,-0.985 -0.125,-1.409c0.354,-0.422 0.983,-0.481 1.408,-0.125c4.883,4.086 7.359,9.061 7.359,14.789c0,5.991 -2.751,11.869 -7.358,15.724c-0.188,0.156 -0.415,0.233 -0.641,0.233z"></path>
+                    <path d="M7.999,39.928c-0.226,0 -0.453,-0.076 -0.641,-0.233c-4.607,-3.855 -7.358,-9.733 -7.358,-15.724c0,-5.728 2.476,-10.704 7.358,-14.789c0.427,-0.354 1.056,-0.297 1.408,0.125c0.354,0.423 0.299,1.054 -0.125,1.409c-4.407,3.687 -6.641,8.147 -6.641,13.255c0,5.405 2.482,10.71 6.642,14.189c0.424,0.354 0.479,0.985 0.125,1.409c-0.198,0.237 -0.482,0.359 -0.768,0.359z"></path>
+                    <path d="M29,25.159c-0.08,-1.584 3.33,-6.405 -6.658,-14.353c0,0 0.265,4.063 -6.342,13.353c-6.611,9.287 3.985,14.92 3.985,14.92c0,0 -2.791,-4.809 0.015,-9.92c1.076,-1.96 2,-2 4.381,-7.056c0,0 1.341,1.893 0.641,5.997c-1.047,6.202 3.891,3.972 3.978,4.058c1,3 0,5 -1.184,6.92c-0.217,0.125 11.184,-7.919 4.184,-15.919c-1,1 -2,2 -3,2z"></path>
+                  </g>
+                </g>
+              </svg>
+              <span>@yogesh-kumar-mallik-dev</span>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:yogeshmallik.dev@gmail.com" 
+              class="social-link contact-icon" 
+              title="Email">
+              <svg xmlns="http://www.w3.org/2000/svg" 
+                  width="26" height="26" 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  stroke-width="2" 
+                  stroke-linecap="round" 
+                  stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2" ry="2"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <span>yogeshmallik.dev@gmail.com</span>
+            </a>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <!-- Contact Card -->
-      <div class="get-in-touch-card">
-        <h3>Get in Touch</h3>
-        <p>Let's collaborate, connect, or just have a chat — feel free to reach out!</p>
+    <!-- Contact Form -->
+    <section class="form-section fade-up">
+      <h3>Contact Me</h3>
+      <p>Want to collaborate, hire, or connect? Use the form below — I’ll get back to you as soon as possible.</p>
 
-    <div class="contact-links">
-      <!-- Email -->
-      <a href="mailto:yogeshmallik.dev@gmail.com" class="contact-icon" title="Email">
-        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="2" y="4" width="20" height="16" rx="2" ry="2"/>
-          <polyline points="22,6 12,13 2,6"/>
-        </svg>
-      </a>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
 
-      <!-- GitHub -->
-      <a href="https://github.com/Yogesh-Kumar-Mallik-dev" target="_blank" class="contact-icon" title="GitHub">
-        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 .5C5.7.5.8 5.4.8 11.7c0 4.9 3.1 9 7.4 10.5.5.1.7-.2.7-.5v-1.7c-3 .7-3.6-1.3-3.6-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 3 .8.1-.7.4-1.1.8-1.3-2.4-.3-5-1.2-5-5.5 0-1.2.4-2.1 1-2.8-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.8 1 .8-.2 1.6-.3 2.4-.3.8 0 1.6.1 2.4.3 2-.1 2.8-1 2.8-1 0 .1.3 1.1.1 2.5.6.8 1 1.7 1 2.8 0 4.3-2.6 5.2-5.1 5.5.4.3.8 1 .8 2v3c0 .3.2.6.7.5 4.3-1.4 7.4-5.6 7.4-10.5C23.3 5.4 18.4.5 12 .5z"/>
-        </svg>
-      </a>
+    <!-- Certificates & Honours -->
+    <section class="certificates-section fade-up">
+      <h3>Certificates & Honours</h3>
+      <div class="cert-grid">
 
-      <!-- LinkedIn -->
-      <a href="https://www.linkedin.com/in/yogesh-kumar-mallik-060895390" target="_blank" class="contact-icon" title="LinkedIn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-.9 1.8-2.2 3.7-2.2 4 0 4.7 2.6 4.7 6v9.9h-4V15.5c0-2.1 0-4.8-2.9-4.8-2.9 0-3.3 2.3-3.3 4.7V24h-4V8z"/>
-        </svg>
-      </a>
-    </div>
+        <!-- freeCodeCamp JS -->
+        <div class="cert-card">
+          <img src="../images/yogesh-js-certificate.png" alt="JavaScript Certificate" />
+          <h4>JavaScript Algorithms & Data Structures</h4>
+          <p>freeCodeCamp (2025)</p>
+          <a href="https://www.freecodecamp.org/certification/yogesh-kumar-mallik-dev/javascript-algorithms-and-data-structures-v8" target="_blank">View Certificate</a>
+        </div>
+
+        <!-- freeCodeCamp Responsive -->
+        <div class="cert-card">
+          <img src="../images/yogesh-webdev-certificate.png" alt="Responsive Web Design Certificate" />
+          <h4>Responsive Web Design</h4>
+          <p>freeCodeCamp (2025)</p>
+          <a href="https://www.freecodecamp.org/certification/yogesh-kumar-mallik-dev/responsive-web-design" target="_blank">View Certificate</a>
+        </div>
+
+        <!-- LinkedIn Learning - Git and GitHub -->
+        <div class="cert-card">
+          <img src="../images/yogeshkumar-git-github.png" alt="LinkedIn Learning Git and GitHub Certificate">
+          <h4>Learning Git and GitHub</h4>
+          <p>LinkedIn Learning (2025)</p>
+          <a href="https://www.linkedin.com/learning/certificates/0509ea872fa1e5187152ce9111c6e68a66393870ae203ef21dca574eed4fd928?trk=share_certificate" 
+            target="_blank" rel="noopener noreferrer">
+            View Certificate
+          </a>
+        </div>
+
+        <!-- Placeholder for Future Certificates -->
+        <div class="cert-card">
+          <!-- <img src="../images/cert-placeholder.png" alt="Certificate Placeholder" /> -->
+          <h4>Upcoming Certification</h4>
+          <p>In Progress...</p>
         </div>
       </div>
     </section>
 
     <!-- Education Section -->
-		<section class="education-section fade-up">
-			<h2>Education</h2>
-			<div class="education-grid">
+    <section class="education-section fade-up">
+      <h3>Education</h3>
+      <div class="education-grid">
 
-				<!-- College -->
-				<div class="edu-card">
-					<div class="edu-img-container">
-						<img src="../images/bbdit.jpeg" alt="Babu Banaras Institute of Technology, Ghaziabad">
-					</div>
-					<div class="edu-info">
-						<h3>Babu Banaras Institute of Technology, Ghaziaba</h3>
-						<p>Affiliated to Dr. A.P.J. Abdul Kalam Technical University (AKTU), Lucknow</p>
-					</div>
-				</div>
+        <!-- College -->
+        <div class="edu-card">
+          <div class="edu-img-container">
+            <img src="../images/bbdit.jpeg" alt="Babu Banarasi Das Institute of Technology, Ghaziabad">
+          </div>
+          <div class="edu-info">
+            <h4>Babu Banarasi Das Institute of Technology, Ghaziabad</h4>
+            <p>Affiliated to Dr. A.P.J. Abdul Kalam Technical University (AKTU), Lucknow</p>
+            <p><strong>Bachelor of Technology in Computer Science</strong> (2022–2026)</p>
+          </div>
+        </div>
 
-				<!-- School -->
-				<div class="edu-card">
-					<div class="edu-img-container">
-						<img src="../images/trigat.jpg" alt="The Trigat School, Tijara">
-					</div>
-					<div class="edu-info">
-						<h3>The Trigat School, Tijara</h3>
-						<p>High School & Intermediate Education, 2018–2024</p>
-					</div>
-				</div>
+        <!-- School -->
+        <div class="edu-card">
+          <div class="edu-img-container">
+            <img src="../images/trigat.jpg" alt="The Trigat School, Tijara">
+          </div>
+          <div class="edu-info">
+            <h4>The Trigat School, Tijara</h4>
+            <p>High School & Intermediate Education (CBSE)</p>
+            <p><strong>2018–2024</strong></p>
+          </div>
+        </div>
 
-			</div>
-		</section>
+      </div>
+    </section>
 
   </main>
 
@@ -172,4 +253,5 @@
     <p>© 2025 Yogesh Kumar Mallik | Powered by <span class="brand">QiForge</span></p>
   </footer>
 </body>
+
 </html>

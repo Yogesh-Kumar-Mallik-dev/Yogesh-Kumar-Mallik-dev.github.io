@@ -1,148 +1,271 @@
-.contact-page {
-  position: relative;
-  z-index: 1;
-  min-height: 100vh;
-  padding: 6rem 2rem 4rem;
+/* ===============================
+   CONTACT PAGE STYLES
+   =============================== */
+
+/* General layout */
+.contact-main {
+  max-width: 1100px;
+  margin: 5rem auto;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  color: #e0e0e0;
+  gap: 3rem;
 }
 
-/* Profile Section */
-.contact-section {
+/* -------------------------------
+   PROFILE SECTION (UNIFIED CARD)
+--------------------------------*/
+.profile-unified {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 2.5rem;
-  margin-bottom: 4rem;
+  background: rgba(20, 20, 20, 0.9);
+  border: 1px solid rgba(0, 255, 255, 0.15);
+  border-radius: 1rem;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.profile-card {
-  background: rgba(15, 15, 25, 0.9);
-  border: 1px solid #1f1f2e;
-  border-radius: 16px;
-  padding: 2rem;
-  box-shadow: 0 0 15px rgba(0, 246, 255, 0.1);
-  max-width: 350px;
+.profile-unified:hover {
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+  transform: translateY(-4px);
 }
 
 .profile-img {
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  border: 2px solid #00f6ff;
-  margin-bottom: 1rem;
+  border: 2px solid #00ffff;
   object-fit: cover;
-}
-
-.profile-card h2 {
-  color: #00f6ff;
-  margin-bottom: 0.4rem;
-}
-
-.profile-card p {
-  font-size: 0.95rem;
-  color: #ccc;
-}
-
-/* Get in Touch Card */
-.get-in-touch-card {
-  background: rgba(15, 15, 25, 0.9);
-  border: 1px solid #1f1f2e;
-  border-radius: 16px;
-  padding: 2rem;
-  text-align: center;
-  box-shadow: 0 0 15px rgba(0, 246, 255, 0.1);
-  max-width: 450px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.get-in-touch-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px rgba(0, 246, 255, 0.2);
-}
-
-.get-in-touch-card h3 {
-  color: #00f6ff;
   margin-bottom: 1rem;
 }
 
+.profile-content h2 {
+  font-size: 1.8rem;
+  color: #00ffff;
+  margin-bottom: 0.5rem;
+}
+
+.profile-content p {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Social Links */
 .social-links {
   display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 1.2rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
 }
 
-.social-icon img {
-  width: 45px;
-  height: 45px;
-  filter: drop-shadow(0 0 5px rgba(0, 246, 255, 0.2));
-  transition: transform 0.3s ease, filter 0.3s ease;
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.25s ease, transform 0.25s ease;
 }
 
-.social-icon img:hover {
-  transform: scale(1.1);
-  filter: drop-shadow(0 0 10px #00f6ff);
+.social-link:hover {
+  color: #00ffff;
+  transform: scale(1.05);
 }
 
-/* Education Section */
-.education-section {
+.social-link svg {
+  fill: currentColor;
+}
+
+/* -------------------------------
+   CONTACT FORM SECTION
+--------------------------------*/
+.form-section {
+  background: rgba(18, 18, 18, 0.9);
+  border: 1px solid rgba(0, 255, 255, 0.15);
+  border-radius: 1rem;
+  padding: 2.5rem 2rem;
   text-align: center;
-  margin-top: 2rem;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.05);
+  transition: box-shadow 0.3s ease;
 }
 
-.education-section h2 {
-  color: #00f6ff;
-  margin-bottom: 2rem;
+.form-section:hover {
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
+}
+
+.form-section h3 {
+  color: #00ffff;
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.form-section p {
+  color: #bbb;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #111;
+  border: 1px solid #333;
+  color: #f2f2f2;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #00ffff;
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+}
+
+.contact-form button {
+  background: #00ffff;
+  border: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  background: #00cccc;
+  transform: translateY(-2px);
+}
+
+/* -------------------------------
+   CERTIFICATES & HONOURS
+--------------------------------*/
+.certificates-section {
+  background: rgba(18, 18, 18, 0.9);
+  border: 1px solid rgba(0, 255, 255, 0.15);
+  border-radius: 1rem;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.08);
+}
+
+.certificates-section h3 {
+  color: #00ffff;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.8rem;
+  justify-items: center;
+}
+
+.cert-card {
+  background: #111;
+  border: 1px solid rgba(0, 255, 255, 0.1);
+  border-radius: 0.8rem;
+  padding: 1.2rem;
+  text-align: center;
+  color: #ccc;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.15);
+}
+
+.cert-card img {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.cert-card h4 {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.cert-card p {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+}
+
+.cert-card a {
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.cert-card a:hover {
+  color: #00cccc;
+}
+
+/* -------------------------------
+   EDUCATION SECTION
+--------------------------------*/
+.education-section {
+  background: rgba(18, 18, 18, 0.9);
+  border: 1px solid rgba(0, 255, 255, 0.15);
+  border-radius: 1rem;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.08);
+}
+
+.education-section h3 {
+  color: #00ffff;
+  font-size: 1.5rem;
+  margin-bottom: 1.8rem;
 }
 
 .education-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  justify-items: center;
-}
-
-.education-section {
-  text-align: center;
-  margin-top: 3rem;
-}
-
-.education-section h2 {
-  color: #00f6ff;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-}
-
-.education-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
-  justify-items: center;
 }
 
 .edu-card {
-  background: rgba(15, 15, 25, 0.9);
-  border: 1px solid #1f1f2e;
-  border-radius: 16px;
+  background: #111;
+  border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 0 15px rgba(0, 246, 255, 0.1);
-  transition: all 0.3s ease;
-  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.08);
+  border: 1px solid rgba(0, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .edu-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 25px rgba(0, 246, 255, 0.25);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.15);
 }
 
-/* Image container for large banners */
 .edu-img-container {
   width: 100%;
-  height: 200px;
+  height: 160px;
   overflow: hidden;
 }
 
@@ -150,27 +273,66 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.9);
-  transition: transform 0.4s ease, filter 0.4s ease;
 }
 
-.edu-card:hover .edu-img-container img {
-  transform: scale(1.05);
-  filter: brightness(1);
-}
-
-/* Info section under image */
 .edu-info {
-  padding: 1.5rem;
+  padding: 1rem;
+  text-align: left;
+  color: #ccc;
 }
 
-.edu-info h3 {
-  color: #00f6ff;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
+.edu-info h4 {
+  color: #fff;
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
 }
 
 .edu-info p {
-  color: #ccc;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  color: #aaa;
+  line-height: 1.4;
+}
+
+/* -------------------------------
+   RESPONSIVE DESIGN
+--------------------------------*/
+@media (max-width: 768px) {
+  .profile-unified {
+    padding: 2rem 1.5rem;
+  }
+
+  .profile-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-main {
+    padding: 1rem;
+    margin-top: 4rem;
+  }
+
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-card {
+    max-width: 100%;
+  }
+}
+
+.social-link svg {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  fill: none;
+  stroke: currentColor;
+  transition: stroke 0.3s ease, fill 0.3s ease, color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #00ffff;
+}
+
+.social-link:hover svg {
+  stroke: #00ffff;
+  fill: none;
 }
